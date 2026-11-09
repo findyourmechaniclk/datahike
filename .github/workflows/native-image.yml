@@ -44,6 +44,7 @@ jobs:
             arch: amd64
             skip-libdatahike-test: true
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 120
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GRAALVM_VERSION: 25.0.0
